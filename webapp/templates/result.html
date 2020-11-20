@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>meme generator</title>
+</head>
+<body>
+    <h1>选择图片，点击上传（文件扩展名需以 png, jpg, JPG, PNG, bmp 结尾）</h1>
+    <form action="" enctype='multipart/form-data' method='POST'>
+        <input type="file" name="img" style="margin-top:20px;"/>
+        <br>
+        <input type="submit" value="上传" class="button-new" style="margin-top:15px;"/>
+    </form>
+    <h1>结果</h1>
+    <h1>{{result_text}}</h1>
+    <img src = "{{ url_for('static', filename = result_file) }}" width="400" height="400" alt="图片逃跑了~"/>
+</body>
+</html>
+
+
+
+
+   
+  
+    
+    
