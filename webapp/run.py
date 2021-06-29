@@ -53,8 +53,7 @@ def home():
         cv2.imwrite(os.path.join(result_fold, str(img_count-1)+'_result.jpg'), img)
         
         return render_template('result.html', result_text=result_text, result_file=app.config['RESULT_IMAGE_FOLDER']+str(img_count-1)+'_result.jpg')
-        #return render_template('result.html', result_text=result_text, result_file=result_fold+str(img_count-1)+'_result.jpg')
     return render_template('home.html')
 
 if __name__ == '__main__':
-    app.run('0.0.0.0', port=11002, debug=True)
+    app.run('0.0.0.0', port=11007, debug=True)
